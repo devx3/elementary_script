@@ -29,6 +29,9 @@ sleep 1
 sudo add-apt-repository -y ppa:versable/elementary-update #Repositório do Elementary-OS
 sudo add-apt-repository -y ppa:webupd8team/java #Repositório Java
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3 # Repositório Sublime Text 3
+sudo add-apt-repository ppa:n-muench/vlc #VLC player
+sudo add-apt-repository ppa:transmissionbt/ppa # Transmission
+sudo add-apt-repository ppa:libreoffice/ppa # Libreoffice
 
 # Dá um update na base do Sistema
 sudo apt-get -y update
@@ -73,8 +76,20 @@ echo "Instalando o Java"
 sleep 1
 #installing java
 sudo apt-get -y install oracle-java8-installer 
-sudo apt-get -y install openjdk-jre
-sudo apt-get -y install openjdk-jdk
+sudo apt-get -y install openjdk-7-jre
+sudo apt-get -y install openjdk-7-jdk
+
+echo "Instalando VLC Player"
+sleep 1
+sudo apt-get -y install vlc
+
+echo "Instalando Libreoffice"
+sleep 1
+sudo apt-get -y install libreoffice
+
+echo "Instalando Transmission"
+sleep 1
+sudo apt-get -y install transmission
 
 echo "Setando crontab que mantém atualizado o sistema"
 #Chama script que cria um cron para manter o S.O sempre atualizado
