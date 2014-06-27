@@ -5,7 +5,7 @@ elementary_script
 
 Esse script provê a instalação de alguns componentes comuns após a instalação do sistema operacional.
 Para executar, basta digitar no terminal 
-<pre>$ ./install.sh.</pre>
+<pre>$ ./install.sh</pre>
 <h3>O que ele instala:</h3>
 
 <b>Básicos:</b>
