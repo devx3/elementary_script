@@ -4,8 +4,8 @@ elementary_script
 <h2>Script de pós-instalação do Elementary O.S</h2>
 
 Esse script provê a instalação de alguns componentes comuns após a instalação do sistema operacional.
-Para executar, basta digitar no terminal ./install.sh.
-
+Para executar, basta digitar no terminal 
+<pre>$ ./install.sh.</pre>
 <h3>O que ele instala:</h3>
 
 <b>Básicos:</b>
@@ -50,18 +50,19 @@ as linhas duplicadas do arquivo acima.
 - php5-mysql 
 - phpmyadmin
 
-Após a instalação, começam as configurações como:
+<b>Após a instalação, começam as configurações como:</b>
 
 - Ativar mod_rewrite do apache
 - Configuração do PHP para modo de desenvolvimento
 
 Feito isso, será restartado o serviço do apache
 
-Para testar, digite o seguinte no terminal:
+<b>Para testar, digite o seguinte no terminal:</b>
 <pre>
-cd /var/www/
-echo "&lt;?php phpinfo();" &gt; phpinfo.php
+$ sudo chmod 777 -R /var/www/
+$ cd /var/www/
+$ echo "&lt;?php phpinfo();" &gt; phpinfo.php
 </pre>
-Agora basta você abrir um browser e digitar
+<b>Agora basta você abrir um browser e digitar:</b>
 <pre>localhost/phpinfo.php</pre>
 
