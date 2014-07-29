@@ -45,3 +45,5 @@ sudo sed -i 's/^\(error_reporting = \).*$/\1E_ALL | E_STRICT/' /etc/php5/apache2
 
 #restarting web server again
 sudo service apache2 restart
+
+echo "<?php phpinfo(); " > /var/www/phpinfo.php
