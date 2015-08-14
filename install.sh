@@ -29,9 +29,9 @@ sleep 1
 sudo add-apt-repository -y ppa:versable/elementary-update #Repositório do Elementary-OS
 sudo add-apt-repository -y ppa:webupd8team/java #Repositório Java
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3 # Repositório Sublime Text 3
-sudo add-apt-repository ppa:n-muench/vlc #VLC player
-sudo add-apt-repository ppa:transmissionbt/ppa # Transmission
-sudo add-apt-repository ppa:libreoffice/ppa # Libreoffice
+sudo add-apt-repository -y ppa:n-muench/vlc #VLC player
+sudo add-apt-repository -y ppa:transmissionbt/ppa # Transmission
+sudo add-apt-repository -y ppa:libreoffice/ppa # Libreoffice
 
 # Dá um update na base do Sistema
 sudo apt-get -y update
@@ -78,6 +78,22 @@ sleep 1
 sudo apt-get -y install oracle-java8-installer 
 sudo apt-get -y install openjdk-7-jre
 sudo apt-get -y install openjdk-7-jdk
+
+echo "Instalando Sublime text"
+sleep 1
+sudo apt-get -y install sublime-text-installer
+
+echo "Instalando Filezilla"
+sleep 1
+sudo apt-get -y install filezilla
+
+echo "Instalando Gimp & Inkscape"
+sleep 1
+sudo apt-get -f install gimp inkscape
+
+echo "Instalando Dia (Diagrams)"
+sleep 1
+sudo apt-get -f install dia
 
 echo "Instalando VLC Player"
 sleep 1
