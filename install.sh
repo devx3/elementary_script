@@ -107,6 +107,18 @@ echo "Instalando Transmission"
 sleep 1
 sudo apt-get -y install transmission
 
+echo "Instalando Thunderbird"
+sleep 1
+sudo apt-get -y install thunderbird
+
+echo "Instalando Filezilla"
+sleep 1
+sudo apt-get -y install filezilla
+
+echo "Instalando GiT"
+sleep 1
+sudo apt-get -y install git gitg
+
 echo "Setando crontab que mantém atualizado o sistema"
 #Chama script que cria um cron para manter o S.O sempre atualizado
 ./setting_crontab.sh
